@@ -148,6 +148,9 @@
                       <p>{{ __('RTL Support') }}</p>
                     </a>
                   </li>
+                  @php
+                      $activePage = 'upgrade';
+                  @endphp
                   <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
                     <a class="nav-link text-white bg-danger" href="{{ route('upgrade') }}">
                       <i class="material-icons text-white">unarchive</i>
